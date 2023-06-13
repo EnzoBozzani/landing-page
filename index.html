@@ -13,25 +13,31 @@
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="Tom's Jazz School">
-        <nav class="mt-1 mx-auto">
-            <a href="#">Início</a><a href="#">Cursos</a><a href="#">Eventos</a><a href="#">Contato</a>
-        </nav>
-        <a href="#" class="button mt-1 mx-auto mb-1">Se Inscreva</a>
+        <div class="container">
+            <img src="images/logo.svg" alt="Tom's Jazz School">
+            <nav>
+                <a href="#">Início</a><a href="#">Cursos</a><a href="#">Eventos</a><a href="#">Contato</a>
+            </nav>
+            <a href="#" class="button mt-1 mx-auto mb-1">Se Inscreva</a>
+        </div>
     </header>
     <main>
         <section class="hero-section">
-            <img src="images/hero-img.svg" alt="Banda de Jazz Tocando">
-            <div>
-                <h1 class="mt-2">
-                    Crie algo <span class="text-primary decoration">impactante</span> com música
-                </h1>
-                <p class="mt-2 mb-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta illo quis libero culpa molestias
-                    officiis sunt assumenda autem numquam nobis cum accusantium adipisci dolore velit labore ipsa facere
-                    qui.
-                </p>
-                <a href="#" class="button">Comece Agora</a>
+            <div class="container row-reverse">
+                <img src="images/hero-img.svg" alt="Banda de Jazz Tocando">
+                <div>
+                    <h1 class="mt-2">
+                        Crie algo <span class="text-primary decoration">impactante</span> com música
+                    </h1>
+                    <p class="mt-2 mb-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, dicta illo quis libero culpa
+                        molestias
+                        officiis sunt assumenda autem numquam nobis cum accusantium adipisci dolore velit labore ipsa
+                        facere
+                        qui.
+                    </p>
+                    <a href="#" class="button">Comece Agora</a>
+                </div>
             </div>
         </section>
         <section class="courses-section">
@@ -77,17 +83,24 @@
         </section>
     </main>
     <footer>
-        <div>
-            <img src="/images/logo.svg" alt="Tom's Jazz School">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla esse perferendis, dignissimos in inventore a.</p>
+        <div class="container">
+            <div class="about-col">
+                <img src="/images/logo.svg" alt="Tom's Jazz School" class="mb-1 mt-1">
+                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla esse perferendis,
+                    dignissimos
+                    in inventore a.</p>
+            </div>
+            <nav class="mb-2">
+                <a href="#">Início</a><a href="#">Cursos</a><a href="#">Eventos</a><a href="#">Contato</a>
+            </nav>
+            <form class="newsletter">
+                <label for="email" class="mb-1">Receba materiais gratuitos no seu e-mail:</label>
+                <input type="text" name="email" id="email" placeholder="Digite seu e-mail" class="mb-1">
+                <button type="submit" class="button mb-2">
+                    Quero Receber
+                </button>
+            </form>
         </div>
-        <nav>
-            <a href="#">Início</a><a href="#">Cursos</a><a href="#">Eventos</a><a href="#">Contato</a>
-        </nav>
-        <form>
-            <label for="email">Receba materiais gratuitos no seu e-mail:</label>
-            <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
-        </form>
     </footer>
 </body>
 
